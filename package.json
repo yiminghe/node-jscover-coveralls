@@ -1,0 +1,16 @@
+{
+  "name": "node-jscover-coveralls",
+  "version": "1.0.0",
+  "author": "yiminghe <yiminghe@gmail.com>",
+  "engines": {
+    "node": "~0.10"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/yiminghe/combo-handler.git"
+  },
+  "dependencies": {
+    "request": "^2.40.0"
+  }
+}
