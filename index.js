@@ -12,7 +12,6 @@ module.exports = function (config) {
                     'sourceFiles': []
                 };
                 var report = req.param('report');
-                console.log(report);
                 var jsonReport = JSON.parse(report);
                 var sourceFiles = postData.sourceFiles;
                 for (var f in jsonReport) {
