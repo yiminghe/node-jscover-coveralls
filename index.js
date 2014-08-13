@@ -28,8 +28,15 @@ module.exports = function (config) {
                 }
                 var str = JSON.stringify(postData);
                 var url = 'https://coveralls.io/api/v1/jobs';
-                request.post({url: url, form: { json: str}}, function () {
-                    res.send('ok');
+                request.post({url: url, form: { json: str}}, function (error, response, body) {
+                    if (error) {
+                        res.send('error occurs:');
+                        console.log('error occurs when sending to coveralls.io');
+                        console.log(error);
+                        res.end(error);
+                        return;
+                    }
+                    res.end('sending to coveralls.io successful!  Server responded with:', body);
                 });
             } else {
                 res.send('no effect');
