@@ -1,6 +1,6 @@
 {
   "name": "node-jscover-coveralls",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "author": "yiminghe <yiminghe@gmail.com>",
   "engines": {
     "node": "~0.10"
