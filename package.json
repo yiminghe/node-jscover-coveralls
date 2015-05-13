@@ -1,6 +1,6 @@
 {
   "name": "node-jscover-coveralls",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "author": "yiminghe <yiminghe@gmail.com>",
   "engines": {
     "node": "~0.10"
@@ -12,5 +12,8 @@
   },
   "dependencies": {
     "coveralls": "^2.11.1"
+  },
+  "scripts":{
+    "publish":"git push origin"
   }
 }
